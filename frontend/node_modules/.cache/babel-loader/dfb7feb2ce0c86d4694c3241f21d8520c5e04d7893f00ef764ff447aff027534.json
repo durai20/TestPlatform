@@ -1,0 +1,1 @@
+{"ast":null,"code":"'use strict';\n\nvar store = require('../internals/shared-store');\nmodule.exports = function (key, value) {\n  return store[key] || (store[key] = value || {});\n};","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

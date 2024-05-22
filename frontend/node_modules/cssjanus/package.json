@@ -1,0 +1,52 @@
+{
+  "name": "cssjanus",
+  "version": "2.1.0",
+  "description": "Convert CSS stylesheets between left-to-right and right-to-left directions.",
+  "author": "Trevor Parscal <trevorparscal@gmail.com> (https://trevorparscal.com/)",
+  "license": "Apache-2.0",
+  "homepage": "https://cssjanus.github.io/",
+  "bugs": {
+    "url": "https://github.com/cssjanus/cssjanus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cssjanus/cssjanus.git"
+  },
+  "keywords": [
+    "i18n",
+    "bidi",
+    "rtl",
+    "ltr"
+  ],
+  "main": "./src/cssjanus.js",
+  "files": [
+    "src/",
+    "History.md",
+    "LICENSE.txt"
+  ],
+  "scripts": {
+    "test": "eslint . && qunit test/unit.js",
+    "cover": "nyc qunit test/unit.js",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-wikimedia": "0.20.0",
+    "nyc": "^15.1.0",
+    "qunit": "2.15.0"
+  },
+  "nyc": {
+    "include": [
+      "src"
+    ],
+    "reporter": [
+      "text",
+      "lcovonly"
+    ]
+  }
+}
