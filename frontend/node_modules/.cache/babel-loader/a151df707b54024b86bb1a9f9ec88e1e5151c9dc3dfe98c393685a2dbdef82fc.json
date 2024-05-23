@@ -1,1 +1,0 @@
-{"ast":null,"code":"'use strict';\n\nvar isCallable = require('../internals/is-callable');\nmodule.exports = function (it) {\n  return typeof it == 'object' ? it !== null : isCallable(it);\n};","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}
